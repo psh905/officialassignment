@@ -1,6 +1,20 @@
 <!doctype html>
 <html>
   <head>
+     <script
+   src="http://code.jquery.com/jquery-3.5.0.js"
+   integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+   crossorigin="anonymous"></script>
+
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
     <title>자기소개 과제(박상혁) -html</title>
     <meta charset="utf-8">
@@ -18,23 +32,41 @@
       }
       ol{
         border-right:5px solid gray;
-        width:80px;
+        width:120px;
         margin:0;
         padding:20px;
       }
-      #grid{
-        display: grid ;
-        grid-template-columns:150px 1fr 1fr;
-      }
+      
       body{
-        padding-left:20px;
+        padding-left:10px;
         font-family: 'Baloo Tammudu 2', cursive;
-        background-color:#8EF7FF;
+        background-color:white;
       }
       #picture{
         padding-left:15px;
-        border-left:3px double yellow;
+        
+        
       }
+      #grid{
+        display:grid;
+        grid-template-columns:450px 1fr;
+      }
+      #right{
+        border-left: 1px solid gray;
+        padding-left:30px;
+      }
+      body {
+
+        margin: 0px;
+
+        background-image: url("배경사진2.jpg") ;
+        background-repeat:no-repeat;
+        background-size:100% 145%;
+        
+
+
+
+    }
 
       </style>
 
@@ -46,35 +78,47 @@
 
 
     <h1><a href="index.html">자기소개 index</a></h1>
-    <div id="grid">
-      <div id="left">
-      <ol>
-        <li> <a href="1.html"> 전공 </a></li>
-          <li> <a href="2.html"> 출신지역 </a></li>
-        <li> <a href="3.html"> 나이 </a></li>
-      </ol>
-      </div>
-
-      <div id="right">
+    
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="1.html">전공</a></li>
+          <li role="presentation"><a href="2.html">출신지역</a></li>
+          <li role="presentation"><a href="3.html">나이</a></li>
+        </ul>
+      
+        <div id="grid">
 
 
-
-
-        <h2 style="color:green;"> 개괄적 소개 </h2>
+          <div id="left">
+            <h2 style="color:green;"> 개괄적 소개 </h2>
 
 
 
        안녕하세요! 멋사 8기로 참여하게된 박상혁이라고 합니다.
-      <br><br><h3>잘 부탁드려요 :) !</h3>
+       <br> 아직 상당히 미숙한 수준이지만 노력해보겠습니다!   
       </div>
-      <div id="picture">
-      <img src="사진1.jpg" width=40%>
-
-      <a href="https://www.instagram.com" target="_blank" title="제 인스타아이디입니다!">sanghyukmon</a>
 
 
-    </div>
-  </div>
+
+          <div id="right">
+            <h3>잘 부탁드려요 :) !</h3>
+      
+            <div id="picture">
+            <img src="사진1.jpg" width=100px>
+            </div>
+
+            <a href="https://www.instagram.com" target="_blank" title="제 인스타아이디입니다!">sanghyukmon</a>
+
+          <p><a class="btn btn-primary btn-lg" href="https://www.instagram.com" role="button">Go to instagram site</a></p>
+            </div>
+
+
+
+
+
+      
+
+      </div>
+  
 
 
   </body>
