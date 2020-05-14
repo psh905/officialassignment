@@ -89,13 +89,41 @@
 
 
     <h1><a href="index.html">자기소개 index</a></h1>
-    <input type="button" value="파랑" onclick="
-      document.querySelector('body').style.color= 'blue';
-       
+    
+    
+    <input id="redblue" type="button" value="빨강" onclick="
+    if (document.querySelector('#redblue').value === '빨강'){
+    document.querySelector('body').style.color='red';
+    document.querySelector('#redblue').value ='파랑';
+    var alist = document.querySelectorAll('a');
+    var i=0 ;
+    while(i < alist.length){
+    console.log(alist[i]);
+    alist[i].style.color='red';
+    i= i+1 ;
+}
+    }
+    else {document.querySelector('body').style.color='blue';
+    document.querySelector('#redblue').value ='빨강'
+    var alist = document.querySelectorAll('a');
+var i=0 ;
+while(i < alist.length){
+    console.log(alist[i]);
+    alist[i].style.color='yellowgreen';
+    i= i+1 ;
+}
+    }
     ">
-    <input type="button" value="빨강" onclick="
+     <input id="redblue" type="button" value="빨강" onclick="
+     if (this.value === '빨강'){
      document.querySelector('body').style.color='red';
-    ">
+     this.value ='파랑';
+     }
+     else {document.querySelector('body').style.color='blue';
+     this.value ='빨강'
+     }
+     ">
+   </body>
     <input type="button" value="정상" onclick="
     document.querySelector('body').style.color='black';
    ">
@@ -146,6 +174,16 @@
   
 
     </div>
+    <input id="redblue" type="button" value="빨강" onclick="
+    var target = document.querySelector('body');
+    if (this.value === '빨강'){
+    target.style.color='red';
+    this.value ='파랑';
+    }
+    else {target.style.color='blue';
+    this.value ='빨강'
+    }
+    ">
   </body>
 
 </html>
