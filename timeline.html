@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timeline</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+     src="http://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+         crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+    <div id="title">👶🏻 나의 일생 🧑🏻‍</div>
+    <div class="buttons">
+        <button type="button" class="btn btn-info" onclick="
+        document.querySelector('body').style.backgroundImage='url(배경1.png)';
+        document.querySelector('body').style.backgroundSize='cover';
+        ">하늘하늘한 배경</button>
+        <button type="button" class="btn btn-warning" onclick="
+        document.querySelector('body').style.backgroundImage='url(배경2.png)';
+        document.querySelector('body').style.backgroundSize='cover';
+        ">주황주황한 배경</button><br>
+    </div>
+    <div class="content">
+        <div class="card">
+
+            <img src="어린이상혁1.jpg"  width="102" height="80">
+            <div class="date">2003년3월2일 ~ 2009년2월</div>
+            <div class="what">초등학생 박상혁</div>
+            <div class="where">하탑초등학교</div>
+            <div class="text">인사성이 좋아 동네 어르신들께 이쁨 받던 시기<br></div>
+            <div class="dot"></div>
+
+
+        </div>
+        <div class="card">
+            <img src="중학생상혁.jpg" width="102" height="80">
+            <div class="date">2009년3월2일 ~ 2012년 2월</div>
+            <div class="what">중학생 박상혁</div>
+            <div class="where">이매중학교</div>
+            <div class="text">철 없이 노는 게 그렇게도 좋던 시기</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="고등학생상혁.jpg" width="102" height="80">
+            <div class="date">2012년3월2일 ~ 2015년2월</div>
+            <div class="what">고등학생 박상혁</div>
+            <div class="where">돌마고등학교</div>
+            <div class="text">공부의 필요성을 느끼고 노력하고자 했던 시기</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="대학생상혁.JPG" width="102" height="80">
+            <div class="date">2016년3월 ~ 현재진행형 :)</div>
+            <div class="what">대학생 박상혁</div>
+            <div class="where">성균관대학교</div>
+            <div class="text">하고 싶은 게 많아 고민이 많은 시기</div>
+            <div class="dot"></div>
+        </div>
+        <div class="card">
+            <img src="군대상혁.jpg" width="102" height="80">
+            <div class="date">2017년10월16일 ~ 2019년6월</div>
+            <div class="what">군인 박상혁</div>
+            <div class="where">동두천 미2사단</div>
+            <div class="text">토종한국인이 영어랑 조금은 친해졌던 시기</div>
+            <div class="dot"></div>
+        </div>
+        <div class="line"></div>
+    </div>
+    <a href="#title"><button id="tothetop">▲위로▲</button></a>
+    
+</body>
+</html>

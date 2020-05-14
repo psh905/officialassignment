@@ -1,0 +1,140 @@
+img{
+    width:100px;
+    grid-column: 1;
+    border-radius: 100%;
+    border : 5px solid rgb(238, 237, 237);
+    position:relative;
+    top: -36%;
+    left: -73%;
+    z-index:10;
+
+}
+#title{
+    text-align:center;
+    font-size: 45px;
+    padding-bottom: 40px;
+    font-family: 'Yeon Sung', cursive;
+    color: #5f4c4c;
+    padding-top:10px;
+    
+}
+body{
+    
+}
+.buttons{
+    text-align:center;
+}
+.content{
+    padding-left:10%;
+    padding-right:10%;
+    margin:5%;
+}
+.card{
+    position:relative;
+    display:grid;
+    grid-template-columns: 60px auto 30px;
+    background-color:#def1ec;
+    width:40%;
+    margin-bottom:5%;
+    border-radius: 15%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 4px 2px #0d3329 inset;
+    transition: 1.2s;
+
+}
+.card:hover{
+    background-color: rgb(190, 236, 89);
+    box-shadow:none;
+    
+}
+
+.date{
+    top: -7%;
+    right: 11%;
+    padding-left: 28px;
+    grid-column: 2;
+    position: relative;
+    background-color: #d6edff;
+    display: inline;
+    width: 158px;
+    height: 12px;
+    font-size: 12px;
+    font-family: 'Yeon Sung', cursive;
+    z-index:5;
+    box-shadow: 0px 0px 2px 2px #d6edff; inset;
+    
+    
+}
+.what{
+    grid-column:2;
+    position:relative;
+    top: -231%;
+    font-size: 20px;
+    font-family: 'Black Han Sans', sans-serif;
+}
+.where{
+    grid-column:2;
+    position:relative;
+    font-family: 'Do Hyeon', sans-serif;
+    color: #78b97b;
+    top: -307%;
+    
+}
+.text{
+    grid-column:2;
+    position:relative;
+    font-family: 'Do Hyeon', sans-serif;
+    bottom: 76%;
+    font-size: 22px;
+}
+
+.dot{
+    width:20px;
+    height:20px;
+    background-color:#def1ec;
+    position: absolute;
+    right: -28.25%;
+    top: 40%;
+    border-radius: 100%;
+
+
+}
+.line{
+    
+    position: absolute;
+    background-color: #def1ec;
+    top: 27%;
+    left: 50%;
+    margin-left: -2.5px;
+    width: 5px;
+    height: 200%;
+    
+
+}
+.card:nth-child(even){
+    margin-left:60%
+}
+@media(max-width:1000px){
+    .dot, .line{
+        display:none;
+    }
+    .card{
+        width:80%;
+        margin-left:10%;
+        margin-bottom:10%
+
+    }
+    .card:nth-child(even){
+        margin-left:10%;
+    }
+}
+
+.card:nth-child(even) .dot{
+    left: -28.25%;
+}
+
+#tothetop{
+    position:fixed;
+    left:0px;
+    bottom:18px;
+}
